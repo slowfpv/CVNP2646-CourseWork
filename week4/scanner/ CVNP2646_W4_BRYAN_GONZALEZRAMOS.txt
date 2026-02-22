@@ -1,0 +1,12 @@
+Name: BRYAN GONZALEZ RAMOS
+Git Repo: https://github.com/slowfpv/CVNP2646-CourseWork/tree/main
+Video URL: https://drive.google.com/file/d/1odAqTXJrlmaX2bGXX0td7F5ZqYOYu-5X/view?usp=drive_link
+
+Brief Reflection: I did use AI tools for help with syntax and debugging, but I reviewed everything, tested it, and made sure I can explain every line.
+ I also checked for mistakes like incorrect JSON usage or unsafe file handling.
+
+ Lesson Learned:
+ One key concept I learned this week is the difference between json.load() / json.dump()
+ and why Modular Design makes projects easier to scale and that i can use emoji keys in vscode for easier understanding
+ due to I had to use AI (ChatGPT) to ask some questions about why i was having troubles with my syntax and debugging on one of my files.
+
