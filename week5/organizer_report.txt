@@ -1,15 +1,15 @@
 SMART DOWNLOADS ORGANIZER REPORT
 ================================
 
-Total files processed: 16
+Total files processed: 14
 
-documents: 4 files (25.0%)
-images: 2 files (12.5%)
-archives: 2 files (12.5%)
-executables: 1 files (6.2%)
-videos: 2 files (12.5%)
-audio: 2 files (12.5%)
-other: 3 files (18.8%)
+documents: 4 files (28.6%)
+images: 2 files (14.3%)
+archives: 2 files (14.3%)
+executables: 1 files (7.1%)
+videos: 2 files (14.3%)
+audio: 2 files (14.3%)
+other: 1 files (7.1%)
 
 Errors:
 None
