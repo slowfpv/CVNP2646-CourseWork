@@ -1,0 +1,25 @@
+2024-11-25 03:45:12 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+2024-11-25 03:45:15 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+2024-11-25 03:45:18 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+2024-11-25 03:45:22 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+2024-11-25 03:45:25 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+2024-11-25 03:45:28 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+2024-11-25 03:45:31 event=LOGIN status=FAIL user=admin ip=198.51.100.45 method=SSH
+
+2024-11-25 03:46:10 event=LOGIN status=FAIL user=root ip=203.0.113.89 method=SSH
+2024-11-25 03:46:14 event=LOGIN status=FAIL user=root ip=203.0.113.89 method=SSH
+2024-11-25 03:46:18 event=LOGIN status=FAIL user=root ip=203.0.113.89 method=SSH
+
+2024-11-25 03:47:01 event=LOGIN status=FAIL user=administrator ip=192.0.2.15 method=WEB
+
+2024-11-25 03:47:40 event=LOGIN status=FAIL user=jsmith ip=198.51.100.45 method=WEB
+2024-11-25 03:47:44 event=LOGIN status=FAIL user=jsmith ip=198.51.100.45 method=WEB
+
+2024-11-25 03:48:10 event=LOGIN status=SUCCESS user=jsmith ip=10.0.1.50 method=WEB
+2024-11-25 03:48:22 event=LOGIN status=SUCCESS user=amartinez ip=10.0.1.60 method=WEB
+2024-11-25 03:48:35 event=LOGIN status=SUCCESS user=admin ip=10.0.1.70 method=SSH
+2024-11-25 03:48:50 event=LOGIN status=SUCCESS user=kbrown ip=10.0.1.80 method=WEB
+
+THIS_IS_A_BAD_LINE_NO_TIMESTAMP
+2024-11-25 03:49:10 event=LOGIN status FAIL user=admin ip=198.51.100.45 method=SSH
+2024-11-25 03:49:12 event=LOGIN status=FAIL user=admin ip=198.51.100.45 methodSSH

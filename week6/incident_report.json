@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-02T22:08:16",
+    "analyst": "Bryan Gonzalez",
+    "classification": "INTERNAL"
+  },
+  "summary": {
+    "total_events": 19,
+    "total_success": 4,
+    "total_fail": 14,
+    "failure_rate": 73.7,
+    "parse_errors": 1
+  },
+  "top_targeted_users": [
+    {
+      "username": "admin",
+      "failed_attempts": 8
+    },
+    {
+      "username": "root",
+      "failed_attempts": 3
+    },
+    {
+      "username": "jsmith",
+      "failed_attempts": 2
+    },
+    {
+      "username": "administrator",
+      "failed_attempts": 1
+    }
+  ],
+  "top_attacking_ips": [
+    {
+      "ip_address": "198.51.100.45",
+      "failed_attempts": 10
+    },
+    {
+      "ip_address": "203.0.113.89",
+      "failed_attempts": 3
+    },
+    {
+      "ip_address": "192.0.2.15",
+      "failed_attempts": 1
+    }
+  ]
+}
