@@ -1,0 +1,34 @@
+{
+  "plan_name": "Security Logs Daily Backup",
+  "version": "1.0",
+  "created_by": "security_team",
+  "description": "Daily backup of security logs",
+
+  "sources": [
+    {
+      "name": "Firewall Logs",
+      "path": "/var/log/firewall",
+      "recursive": true,
+      "include_patterns": ["*.log", "*.txt"],
+      "exclude_patterns": ["*.tmp"]
+    },
+    {
+      "name": "IDS Alerts",
+      "path": "/var/log/suricata",
+      "recursive": false,
+      "include_patterns": ["fast.log", "eve.json"],
+      "exclude_patterns": []
+    }
+  ],
+
+  "destination": {
+    "base_path": "/backup/security_logs",
+    "create_timestamped_folders": true,
+    "retention_days": 90
+  },
+
+  "options": {
+    "verify_backups": true,
+    "max_file_size_mb": 100
+  }
+}

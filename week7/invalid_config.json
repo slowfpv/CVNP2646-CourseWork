@@ -1,0 +1,16 @@
+{
+  "version": 1.0,
+  "created_by": 123,
+
+  "sources": "should_be_a_list",
+
+  "destination": {
+    "base_path": "",
+    "create_timestamped_folders": "yes"
+  },
+
+  "options": {
+    "verify_backups": "true",
+    "max_file_size_mb": -5
+  }
+}
