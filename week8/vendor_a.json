@@ -1,0 +1,11 @@
+{
+  "vendor": "VendorA",
+  "indicators": [
+    {"id": "VA-001", "type": "ip", "value": "203.0.113.10", "confidence": 95, "threat": "critical", "first_seen": "2024-11-15"},
+    {"id": "VA-002", "type": "domain", "value": "evil-login.com", "confidence": 92, "threat": "high", "first_seen": "2024-11-16"},
+    {"id": "VA-003", "type": "domain", "value": "update-secure.net", "confidence": 88, "threat": "high", "first_seen": "2024-11-18"},
+    {"id": "VA-004", "type": "hash", "value": "a3f1c9e2b7d4", "confidence": 80, "threat": "medium", "first_seen": "2024-11-19"},
+    {"id": "VA-005", "type": "url", "value": "http://bad-portal.com/login", "confidence": 72, "threat": "low", "first_seen": "2024-11-20"},
+    {"id": "VA-006", "type": "ip", "value": "198.51.100.25", "confidence": 86, "threat": "high", "first_seen": "2024-11-21"}
+  ]
+}

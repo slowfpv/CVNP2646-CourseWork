@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-03-05T17:31:48",
+  "format": "SIEM_FEED",
+  "count": 6,
+  "events": [
+    {
+      "ioc_type": "ip",
+      "ioc_value": "203.0.113.10",
+      "confidence": 95,
+      "severity": "critical",
+      "first_seen": "2024-11-15",
+      "sources": [
+        "VendorA",
+        "VendorB"
+      ]
+    },
+    {
+      "ioc_type": "domain",
+      "ioc_value": "evil-login.com",
+      "confidence": 94,
+      "severity": "critical",
+      "first_seen": "2024-11-16",
+      "sources": [
+        "VendorA",
+        "VendorC"
+      ]
+    },
+    {
+      "ioc_type": "domain",
+      "ioc_value": "update-secure.net",
+      "confidence": 88,
+      "severity": "high",
+      "first_seen": "2024-11-18",
+      "sources": [
+        "VendorA"
+      ]
+    },
+    {
+      "ioc_type": "ip",
+      "ioc_value": "198.51.100.25",
+      "confidence": 86,
+      "severity": "high",
+      "first_seen": "2024-11-21",
+      "sources": [
+        "VendorA"
+      ]
+    },
+    {
+      "ioc_type": "domain",
+      "ioc_value": "phish-mail.org",
+      "confidence": 87,
+      "severity": "high",
+      "first_seen": "2024-11-18",
+      "sources": [
+        "VendorB"
+      ]
+    },
+    {
+      "ioc_type": "ip",
+      "ioc_value": "203.0.113.77",
+      "confidence": 85,
+      "severity": "high",
+      "first_seen": "2024-11-19",
+      "sources": [
+        "VendorC"
+      ]
+    }
+  ]
+}

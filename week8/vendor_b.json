@@ -1,0 +1,11 @@
+{
+  "source": "VendorB",
+  "feed": [
+    {"ioc_id": "VB-001", "indicator_type": "ip", "indicator_value": "203.0.113.10", "score": 90, "severity": "high", "seen": "2024-11-17"},
+    {"ioc_id": "VB-002", "indicator_type": "domain", "indicator_value": "phish-mail.org", "score": 87, "severity": "high", "seen": "2024-11-18"},
+    {"ioc_id": "VB-003", "indicator_type": "url", "indicator_value": "http://steal-pass.com", "score": 84, "severity": "medium", "seen": "2024-11-19"},
+    {"ioc_id": "VB-004", "indicator_type": "hash", "indicator_value": "ff09aa11bb22", "score": 91, "severity": "critical", "seen": "2024-11-20"},
+    {"ioc_id": "VB-005", "indicator_type": "ip", "indicator_value": "192.0.2.44", "score": 78, "severity": "medium", "seen": "2024-11-21"},
+    {"ioc_id": "VB-006", "indicator_type": "domain", "score": 89, "severity": "high", "seen": "2024-11-22"}
+  ]
+}

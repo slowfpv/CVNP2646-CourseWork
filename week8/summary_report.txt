@@ -1,0 +1,24 @@
+======================================================================
+THREAT INTELLIGENCE AGGREGATOR - SUMMARY REPORT
+======================================================================
+Generated At: 2026-03-05T17:31:48
+
+PIPELINE COUNTS
+----------------------------------------------------------------------
+Total Loaded:        17
+Valid Indicators:    16
+Unique (Deduped):    14
+Filtered Output:     6
+Duplicates Removed:  3
+
+DISTRIBUTIONS (Filtered)
+----------------------------------------------------------------------
+By Type:     {'ip': 3, 'domain': 3}
+By Severity: {'critical': 2, 'high': 4}
+
+SOURCE CONTRIBUTION (Unique Indicators)
+----------------------------------------------------------------------
+VendorA: 6
+VendorB: 5
+VendorC: 5
+======================================================================

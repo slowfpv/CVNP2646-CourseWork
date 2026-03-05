@@ -1,0 +1,10 @@
+{
+  "name": "VendorC",
+  "items": [
+    {"ref": "VC-001", "category": "domain", "ioc": "evil-login.com", "reliability": 94, "risk": "critical", "date": "2024-11-16"},
+    {"ref": "VC-002", "category": "ip", "ioc": "203.0.113.77", "reliability": 85, "risk": "high", "date": "2024-11-19"},
+    {"ref": "VC-003", "category": "domain", "ioc": "cdn-verify.net", "reliability": 83, "risk": "medium", "date": "2024-11-20"},
+    {"ref": "VC-004", "category": "hash", "ioc": "9911aa22cc33", "reliability": 96, "risk": "critical", "date": "2024-11-21"},
+    {"ref": "VC-005", "category": "url", "ioc": "http://fake-update.net", "reliability": 74, "risk": "low", "date": "2024-11-21"}
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-03-05T17:31:48",
+  "total_entries": 6,
+  "blocklist": [
+    {
+      "address": "203.0.113.10",
+      "type": "ip",
+      "action": "block",
+      "priority": "high",
+      "reason": "critical threat, confidence 95%",
+      "sources": [
+        "VendorA",
+        "VendorB"
+      ]
+    },
+    {
+      "address": "evil-login.com",
+      "type": "domain",
+      "action": "block",
+      "priority": "high",
+      "reason": "critical threat, confidence 94%",
+      "sources": [
+        "VendorA",
+        "VendorC"
+      ]
+    },
+    {
+      "address": "update-secure.net",
+      "type": "domain",
+      "action": "block",
+      "priority": "medium",
+      "reason": "high threat, confidence 88%",
+      "sources": [
+        "VendorA"
+      ]
+    },
+    {
+      "address": "198.51.100.25",
+      "type": "ip",
+      "action": "block",
+      "priority": "medium",
+      "reason": "high threat, confidence 86%",
+      "sources": [
+        "VendorA"
+      ]
+    },
+    {
+      "address": "phish-mail.org",
+      "type": "domain",
+      "action": "block",
+      "priority": "medium",
+      "reason": "high threat, confidence 87%",
+      "sources": [
+        "VendorB"
+      ]
+    },
+    {
+      "address": "203.0.113.77",
+      "type": "ip",
+      "action": "block",
+      "priority": "medium",
+      "reason": "high threat, confidence 85%",
+      "sources": [
+        "VendorC"
+      ]
+    }
+  ]
+}
