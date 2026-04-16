@@ -1,0 +1,18 @@
+{
+  "logging": {
+    "enabled": false,
+    "level": "debug"
+  },
+  "rules": [
+    {
+      "name": "allow-https",
+      "port": 8080,
+      "enabled": true
+    },
+    {
+      "name": "debug-open",
+      "port": 9999,
+      "enabled": true
+    }
+  ]
+}

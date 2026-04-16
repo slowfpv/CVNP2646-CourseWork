@@ -1,0 +1,14 @@
+{
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "destination": "siem"
+  },
+  "rules": [
+    {
+      "name": "allow-https",
+      "port": 443,
+      "enabled": true
+    }
+  ]
+}
