@@ -1,0 +1,117 @@
+[
+  {
+    "user_id": "U001",
+    "role": "admin",
+    "assigned_date": "2026-01-15"
+  },
+  {
+    "user_id": "U001",
+    "role": "server_ops",
+    "assigned_date": "2026-01-20"
+  },
+  {
+    "user_id": "U002",
+    "role": "hr_manager",
+    "assigned_date": "2025-06-01"
+  },
+  {
+    "user_id": "U002",
+    "role": "admin",
+    "assigned_date": "2025-08-20"
+  },
+  {
+    "user_id": "U003",
+    "role": "finance_user",
+    "assigned_date": "2025-10-10"
+  },
+  {
+    "user_id": "U003",
+    "role": "auditor",
+    "assigned_date": "2025-10-12"
+  },
+  {
+    "user_id": "U004",
+    "role": "security_admin",
+    "assigned_date": "2026-02-01"
+  },
+  {
+    "user_id": "U005",
+    "role": "backup_operator",
+    "assigned_date": "2024-11-01"
+  },
+  {
+    "user_id": "U006",
+    "role": "marketing_user",
+    "assigned_date": "2025-05-01"
+  },
+  {
+    "user_id": "U007",
+    "role": "admin",
+    "assigned_date": "2026-03-01"
+  },
+  {
+    "user_id": "U008",
+    "role": "hr_user",
+    "assigned_date": "2025-07-15"
+  },
+  {
+    "user_id": "U008",
+    "role": "auditor",
+    "assigned_date": "2025-08-01"
+  },
+  {
+    "user_id": "U008",
+    "role": "admin",
+    "assigned_date": "2025-09-01"
+  },
+  {
+    "user_id": "U009",
+    "role": "helpdesk",
+    "assigned_date": "2026-02-15"
+  },
+  {
+    "user_id": "U010",
+    "role": "finance_manager",
+    "assigned_date": "2025-06-11"
+  },
+  {
+    "user_id": "U010",
+    "role": "payroll_access",
+    "assigned_date": "2025-06-15"
+  },
+  {
+    "user_id": "U010",
+    "role": "budget_editor",
+    "assigned_date": "2025-06-18"
+  },
+  {
+    "user_id": "U010",
+    "role": "report_viewer",
+    "assigned_date": "2025-06-20"
+  },
+  {
+    "user_id": "U010",
+    "role": "expense_approver",
+    "assigned_date": "2025-06-22"
+  },
+  {
+    "user_id": "U010",
+    "role": "vendor_admin",
+    "assigned_date": "2025-06-25"
+  },
+  {
+    "user_id": "U011",
+    "role": "auditor",
+    "assigned_date": "2026-01-05"
+  },
+  {
+    "user_id": "U011",
+    "role": "admin",
+    "assigned_date": "2026-01-10"
+  },
+  {
+    "user_id": "U099",
+    "role": "ghost_admin",
+    "assigned_date": "2025-04-01"
+  }
+]

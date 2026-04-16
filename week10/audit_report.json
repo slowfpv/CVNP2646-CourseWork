@@ -1,0 +1,140 @@
+{
+  "audit_metadata": {
+    "timestamp": "2026-04-15T22:07:31",
+    "total_users_audited": 12,
+    "total_role_assignments": 23,
+    "total_violations": 16,
+    "auditor": "IAM Audit System v1.0"
+  },
+  "violation_summary": {
+    "by_severity": {
+      "CRITICAL": 4,
+      "HIGH": 5,
+      "MEDIUM": 6,
+      "LOW": 1
+    },
+    "by_type": {
+      "conflicting_roles": 2,
+      "disabled_with_roles": 2,
+      "excessive_permissions": 1,
+      "orphaned_role": 1,
+      "stale_account": 5,
+      "unapproved_department": 1,
+      "unauthorized_admin": 4
+    }
+  },
+  "all_violations": [
+    {
+      "user_id": "U002",
+      "username": "asmith",
+      "violation_type": "disabled_with_roles",
+      "severity": "CRITICAL",
+      "details": "Disabled account has 2 active role(s): hr_manager, admin"
+    },
+    {
+      "user_id": "U006",
+      "username": "twhite",
+      "violation_type": "disabled_with_roles",
+      "severity": "CRITICAL",
+      "details": "Disabled account has 1 active role(s): marketing_user"
+    },
+    {
+      "user_id": "U002",
+      "username": "asmith",
+      "violation_type": "unauthorized_admin",
+      "severity": "HIGH",
+      "details": "User in HR has admin role: admin"
+    },
+    {
+      "user_id": "U007",
+      "username": "lgreen",
+      "violation_type": "unauthorized_admin",
+      "severity": "HIGH",
+      "details": "User in Marketing has admin role: admin"
+    },
+    {
+      "user_id": "U008",
+      "username": "cwilson",
+      "violation_type": "unauthorized_admin",
+      "severity": "HIGH",
+      "details": "User in HR has admin role: admin"
+    },
+    {
+      "user_id": "U010",
+      "username": "apatel",
+      "violation_type": "unauthorized_admin",
+      "severity": "HIGH",
+      "details": "User in Finance has admin role: vendor_admin"
+    },
+    {
+      "user_id": "U003",
+      "username": "mjones",
+      "violation_type": "stale_account",
+      "severity": "MEDIUM",
+      "details": "Active account has not logged in for 151 days"
+    },
+    {
+      "user_id": "U005",
+      "username": "svc_backup",
+      "violation_type": "stale_account",
+      "severity": "MEDIUM",
+      "details": "Active account has no recorded last_login value"
+    },
+    {
+      "user_id": "U008",
+      "username": "cwilson",
+      "violation_type": "stale_account",
+      "severity": "MEDIUM",
+      "details": "Active account has not logged in for 226 days"
+    },
+    {
+      "user_id": "U010",
+      "username": "apatel",
+      "violation_type": "stale_account",
+      "severity": "MEDIUM",
+      "details": "Active account has not logged in for 238 days"
+    },
+    {
+      "user_id": "U012",
+      "username": "bthomas",
+      "violation_type": "stale_account",
+      "severity": "MEDIUM",
+      "details": "Active account has not logged in for 104 days"
+    },
+    {
+      "user_id": "U008",
+      "username": "cwilson",
+      "violation_type": "conflicting_roles",
+      "severity": "CRITICAL",
+      "details": "User has conflicting roles: admin and auditor"
+    },
+    {
+      "user_id": "U011",
+      "username": "nmartin",
+      "violation_type": "conflicting_roles",
+      "severity": "CRITICAL",
+      "details": "User has conflicting roles: admin and auditor"
+    },
+    {
+      "user_id": "U010",
+      "username": "apatel",
+      "violation_type": "excessive_permissions",
+      "severity": "MEDIUM",
+      "details": "User has 6 assigned roles, exceeding threshold of 5"
+    },
+    {
+      "user_id": "U099",
+      "username": "unknown",
+      "violation_type": "orphaned_role",
+      "severity": "HIGH",
+      "details": "Role assignment exists for unknown user_id: U099 (ghost_admin)"
+    },
+    {
+      "user_id": "U012",
+      "username": "bthomas",
+      "violation_type": "unapproved_department",
+      "severity": "LOW",
+      "details": "User belongs to unapproved department: UnknownDept"
+    }
+  ]
+}

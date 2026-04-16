@@ -1,0 +1,111 @@
+================================================================================
+USER ACCOUNT & PERMISSIONS AUDIT REPORT
+================================================================================
+Generated: 2026-04-15 22:07:31
+Auditor: IAM Audit System v1.0
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Total Users Audited: 12
+Total Role Assignments: 23
+Total Violations Found: 16
+
+VIOLATIONS BY SEVERITY
+--------------------------------------------------------------------------------
+CRITICAL     [  4] ████
+HIGH         [  5] █████
+MEDIUM       [  6] ██████
+LOW          [  1] █
+
+VIOLATIONS BY TYPE
+--------------------------------------------------------------------------------
+stale_account                       5
+unauthorized_admin                  4
+disabled_with_roles                 2
+conflicting_roles                   2
+excessive_permissions               1
+orphaned_role                       1
+unapproved_department               1
+
+DETAILED VIOLATIONS
+================================================================================
+
+CRITICAL SEVERITY (4 issues)
+--------------------------------------------------------------------------------
+
+1. User: asmith (ID: U002)
+   Type: disabled_with_roles
+   Details: Disabled account has 2 active role(s): hr_manager, admin
+
+2. User: twhite (ID: U006)
+   Type: disabled_with_roles
+   Details: Disabled account has 1 active role(s): marketing_user
+
+3. User: cwilson (ID: U008)
+   Type: conflicting_roles
+   Details: User has conflicting roles: admin and auditor
+
+4. User: nmartin (ID: U011)
+   Type: conflicting_roles
+   Details: User has conflicting roles: admin and auditor
+
+HIGH SEVERITY (5 issues)
+--------------------------------------------------------------------------------
+
+1. User: asmith (ID: U002)
+   Type: unauthorized_admin
+   Details: User in HR has admin role: admin
+
+2. User: lgreen (ID: U007)
+   Type: unauthorized_admin
+   Details: User in Marketing has admin role: admin
+
+3. User: cwilson (ID: U008)
+   Type: unauthorized_admin
+   Details: User in HR has admin role: admin
+
+4. User: apatel (ID: U010)
+   Type: unauthorized_admin
+   Details: User in Finance has admin role: vendor_admin
+
+5. User: unknown (ID: U099)
+   Type: orphaned_role
+   Details: Role assignment exists for unknown user_id: U099 (ghost_admin)
+
+MEDIUM SEVERITY (6 issues)
+--------------------------------------------------------------------------------
+
+1. User: mjones (ID: U003)
+   Type: stale_account
+   Details: Active account has not logged in for 151 days
+
+2. User: svc_backup (ID: U005)
+   Type: stale_account
+   Details: Active account has no recorded last_login value
+
+3. User: cwilson (ID: U008)
+   Type: stale_account
+   Details: Active account has not logged in for 226 days
+
+4. User: apatel (ID: U010)
+   Type: stale_account
+   Details: Active account has not logged in for 238 days
+
+5. User: bthomas (ID: U012)
+   Type: stale_account
+   Details: Active account has not logged in for 104 days
+
+6. User: apatel (ID: U010)
+   Type: excessive_permissions
+   Details: User has 6 assigned roles, exceeding threshold of 5
+
+LOW SEVERITY (1 issues)
+--------------------------------------------------------------------------------
+
+1. User: bthomas (ID: U012)
+   Type: unapproved_department
+   Details: User belongs to unapproved department: UnknownDept
+
+================================================================================
+END OF REPORT
+================================================================================
