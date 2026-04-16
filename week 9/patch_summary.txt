@@ -1,0 +1,57 @@
+================================================================
+          WEEKLY PATCH COMPLIANCE SUMMARY REPORT
+================================================================
+Generated: 2026-04-15 21:49:26
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------
+Total Systems Analyzed:        100
+High-Risk Systems Identified:  64 (64.0%)
+Critical Priority Systems:     28
+Immediate Action Required:     37 systems >90 days unpatched
+
+RISK DISTRIBUTION
+----------------------------------------------------------------
+Critical (≥70 points):         28 systems
+High (50-69 points):           36 systems
+Medium (25-49 points):         27 systems
+Low (<25 points):              9 systems
+
+TOP 5 HIGHEST RISK SYSTEMS
+----------------------------------------------------------------
+1. WEB-PRD-001 (Score: 100, Critical)
+   Last Patched: 160 days ago | Production | Tags: internet-facing, pci-scope
+
+2. FIN-PRD-011 (Score: 95, Critical)
+   Last Patched: 107 days ago | Production | Tags: hipaa
+
+3. FIN-PRD-085 (Score: 95, Critical)
+   Last Patched: 117 days ago | Production | Tags: pci-scope
+
+4. FIN-PRD-040 (Score: 90, Critical)
+   Last Patched: 90 days ago | Production | Tags: internet-facing
+
+5. DC-PRD-002 (Score: 85, Critical)
+   Last Patched: 140 days ago | Production | Tags: tier-0
+
+RECOMMENDED ACTIONS
+----------------------------------------------------------------
+IMMEDIATE (Next 48 hours):
+• Patch 28 critical-risk systems
+• Review emergency change control procedures
+
+THIS WEEK (Next 7 days):
+• Schedule maintenance windows for 64 high-risk systems
+• Test patches in staging environment first
+
+THIS MONTH (Next 30 days):
+• Implement automated patch deployment for dev/test systems
+• Review and update patch management SOP
+
+COMPLIANCE NOTES
+----------------------------------------------------------------
+CIS Control 7.3: Critical vulnerabilities should be remediated within 15 days. Currently 28 systems are in critical risk range.
+
+PCI-DSS 6.2: Systems in PCI scope must be patched promptly. Currently 7 high-risk PCI-scoped systems need attention.
+
+================================================================

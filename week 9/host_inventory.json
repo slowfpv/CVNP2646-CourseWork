@@ -1,0 +1,1295 @@
+[
+  {
+    "hostname": "WEB-PRD-001",
+    "ip_address": "10.20.10.2",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2025-11-06",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Finance",
+    "owner": "it.1@company.com",
+    "tags": [
+      "internet-facing",
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "DC-PRD-002",
+    "ip_address": "10.20.10.3",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9",
+    "last_patch_date": "2025-11-26",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "IT",
+    "owner": "security.2@company.com",
+    "tags": [
+      "tier-0"
+    ]
+  },
+  {
+    "hostname": "HR-PRD-003",
+    "ip_address": "10.20.10.4",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2025-12-16",
+    "criticality": "high",
+    "environment": "production",
+    "department": "HR",
+    "owner": "it.3@company.com",
+    "tags": [
+      "hipaa"
+    ]
+  },
+  {
+    "hostname": "WEB-STG-004",
+    "ip_address": "10.20.10.5",
+    "os": "macOS Ventura",
+    "os_version": "13",
+    "last_patch_date": "2026-02-15",
+    "criticality": "high",
+    "environment": "staging",
+    "department": "Operations",
+    "owner": "operations.4@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "SEC-PRD-005",
+    "ip_address": "10.20.10.6",
+    "os": "Ubuntu 20.04",
+    "os_version": "20.04",
+    "last_patch_date": "2025-12-29",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.5@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "HR-PRD-006",
+    "ip_address": "10.20.10.7",
+    "os": "macOS Ventura",
+    "os_version": "13",
+    "last_patch_date": "2025-12-09",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.6@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-007",
+    "ip_address": "10.20.10.8",
+    "os": "CentOS 7",
+    "os_version": "7",
+    "last_patch_date": "2025-10-27",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.7@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DEV-DEV-008",
+    "ip_address": "10.20.10.9",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2026-03-08",
+    "criticality": "low",
+    "environment": "development",
+    "department": "HR",
+    "owner": "hr.8@company.com",
+    "tags": [
+      "hipaa"
+    ]
+  },
+  {
+    "hostname": "OPS-DEV-009",
+    "ip_address": "10.20.10.10",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9",
+    "last_patch_date": "2026-01-23",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "Security",
+    "owner": "security.9@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "HR-PRD-010",
+    "ip_address": "10.20.10.11",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2025-10-22",
+    "criticality": "low",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.10@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "FIN-PRD-011",
+    "ip_address": "10.20.10.12",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2025-12-29",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "HR",
+    "owner": "hr.11@company.com",
+    "tags": [
+      "hipaa"
+    ]
+  },
+  {
+    "hostname": "DEV-PRD-012",
+    "ip_address": "10.20.10.13",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-03-22",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.12@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DB-PRD-013",
+    "ip_address": "10.20.10.14",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2025-11-11",
+    "criticality": "low",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.13@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-014",
+    "ip_address": "10.20.10.15",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2026-01-28",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.14@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "FIN-PRD-015",
+    "ip_address": "10.20.10.16",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2025-11-07",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.15@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "API-PRD-016",
+    "ip_address": "10.20.10.17",
+    "os": "CentOS 7",
+    "os_version": "7",
+    "last_patch_date": "2026-03-24",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.16@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DB-DEV-017",
+    "ip_address": "10.20.10.18",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2026-04-06",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "IT",
+    "owner": "it.17@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DB-STG-018",
+    "ip_address": "10.20.10.19",
+    "os": "CentOS 7",
+    "os_version": "7",
+    "last_patch_date": "2026-04-09",
+    "criticality": "low",
+    "environment": "staging",
+    "department": "Finance",
+    "owner": "finance.18@company.com",
+    "tags": [
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "DEV-PRD-019",
+    "ip_address": "10.20.10.20",
+    "os": "macOS Ventura",
+    "os_version": "13",
+    "last_patch_date": "2026-03-08",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.19@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DEV-PRD-020",
+    "ip_address": "10.20.10.21",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2025-11-28",
+    "criticality": "high",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.20@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-DEV-021",
+    "ip_address": "10.20.10.22",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2026-01-23",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "Finance",
+    "owner": "finance.21@company.com",
+    "tags": [
+      "internet-facing",
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "APP-PRD-022",
+    "ip_address": "10.20.10.23",
+    "os": "Windows Server 2019",
+    "os_version": "2019",
+    "last_patch_date": "2025-11-21",
+    "criticality": "high",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.22@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DC-DEV-023",
+    "ip_address": "10.20.10.24",
+    "os": "Windows 10 Pro",
+    "os_version": "22H2",
+    "last_patch_date": "2026-03-06",
+    "criticality": "low",
+    "environment": "development",
+    "department": "HR",
+    "owner": "hr.23@company.com",
+    "tags": [
+      "hipaa",
+      "tier-0"
+    ]
+  },
+  {
+    "hostname": "FIN-PRD-024",
+    "ip_address": "10.20.10.25",
+    "os": "Windows 10 Pro",
+    "os_version": "22H2",
+    "last_patch_date": "2025-12-02",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.24@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "FIN-DEV-025",
+    "ip_address": "10.20.10.26",
+    "os": "Windows Server 2019",
+    "os_version": "2019",
+    "last_patch_date": "2026-02-13",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "Security",
+    "owner": "security.25@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "HR-PRD-026",
+    "ip_address": "10.20.10.27",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-02-13",
+    "criticality": "low",
+    "environment": "production",
+    "department": "Finance",
+    "owner": "finance.26@company.com",
+    "tags": [
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "HR-STG-027",
+    "ip_address": "10.20.10.28",
+    "os": "Ubuntu 20.04",
+    "os_version": "20.04",
+    "last_patch_date": "2026-02-03",
+    "criticality": "medium",
+    "environment": "staging",
+    "department": "Engineering",
+    "owner": "engineering.27@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-PRD-028",
+    "ip_address": "10.20.10.29",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2026-02-06",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.28@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DEV-STG-029",
+    "ip_address": "10.20.10.30",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2025-12-16",
+    "criticality": "high",
+    "environment": "staging",
+    "department": "IT",
+    "owner": "it.29@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "FIN-PRD-030",
+    "ip_address": "10.20.10.31",
+    "os": "Ubuntu 22.04",
+    "os_version": "22.04",
+    "last_patch_date": "2026-02-10",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.30@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "OPS-PRD-031",
+    "ip_address": "10.20.10.32",
+    "os": "Debian 11",
+    "os_version": "11",
+    "last_patch_date": "2025-12-05",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.31@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-DEV-032",
+    "ip_address": "10.20.10.33",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9",
+    "last_patch_date": "2026-02-21",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "IT",
+    "owner": "it.32@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "HR-PRD-033",
+    "ip_address": "10.20.10.34",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2025-12-23",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.33@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-STG-034",
+    "ip_address": "10.20.10.35",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-02-12",
+    "criticality": "high",
+    "environment": "staging",
+    "department": "Operations",
+    "owner": "operations.34@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DC-PRD-035",
+    "ip_address": "10.20.10.36",
+    "os": "macOS Sonoma",
+    "os_version": "14",
+    "last_patch_date": "2025-12-13",
+    "criticality": "low",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.35@company.com",
+    "tags": [
+      "tier-0"
+    ]
+  },
+  {
+    "hostname": "WEB-DEV-036",
+    "ip_address": "10.20.10.37",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2026-04-13",
+    "criticality": "low",
+    "environment": "development",
+    "department": "Security",
+    "owner": "security.36@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DB-DEV-037",
+    "ip_address": "10.20.10.38",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "8",
+    "last_patch_date": "2026-02-22",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "Operations",
+    "owner": "operations.37@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-038",
+    "ip_address": "10.20.10.39",
+    "os": "macOS Ventura",
+    "os_version": "13",
+    "last_patch_date": "2026-01-22",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.38@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "API-PRD-039",
+    "ip_address": "10.20.10.40",
+    "os": "CentOS 7",
+    "os_version": "7",
+    "last_patch_date": "2025-12-02",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.39@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "FIN-PRD-040",
+    "ip_address": "10.20.10.41",
+    "os": "CentOS 7",
+    "os_version": "7",
+    "last_patch_date": "2026-01-15",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.40@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "OPS-STG-041",
+    "ip_address": "10.20.10.42",
+    "os": "Windows Server 2019",
+    "os_version": "2019",
+    "last_patch_date": "2026-02-04",
+    "criticality": "high",
+    "environment": "staging",
+    "department": "Finance",
+    "owner": "finance.41@company.com",
+    "tags": [
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "FIN-PRD-042",
+    "ip_address": "10.20.10.43",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2025-12-23",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.42@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DB-PRD-043",
+    "ip_address": "10.20.10.44",
+    "os": "Debian 11",
+    "os_version": "11",
+    "last_patch_date": "2026-03-16",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.43@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DB-PRD-044",
+    "ip_address": "10.20.10.45",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2026-01-28",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.44@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DEV-PRD-045",
+    "ip_address": "10.20.10.46",
+    "os": "Windows 10 Pro",
+    "os_version": "22H2",
+    "last_patch_date": "2025-10-28",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.45@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-DEV-046",
+    "ip_address": "10.20.10.47",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-03-29",
+    "criticality": "low",
+    "environment": "development",
+    "department": "Security",
+    "owner": "security.46@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "APP-DEV-047",
+    "ip_address": "10.20.10.48",
+    "os": "Windows Server 2019",
+    "os_version": "2019",
+    "last_patch_date": "2026-02-04",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "Security",
+    "owner": "security.47@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "HR-STG-048",
+    "ip_address": "10.20.10.49",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2026-01-30",
+    "criticality": "medium",
+    "environment": "staging",
+    "department": "Security",
+    "owner": "security.48@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "WEB-STG-049",
+    "ip_address": "10.20.10.50",
+    "os": "Windows 10 Pro",
+    "os_version": "22H2",
+    "last_patch_date": "2026-01-05",
+    "criticality": "low",
+    "environment": "staging",
+    "department": "Security",
+    "owner": "security.49@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DEV-PRD-050",
+    "ip_address": "10.20.10.51",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-01-28",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "HR",
+    "owner": "hr.50@company.com",
+    "tags": [
+      "hipaa"
+    ]
+  },
+  {
+    "hostname": "OPS-PRD-051",
+    "ip_address": "10.20.10.52",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2025-12-18",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.51@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-DEV-052",
+    "ip_address": "10.20.10.53",
+    "os": "Windows Server 2019",
+    "os_version": "2019",
+    "last_patch_date": "2026-03-12",
+    "criticality": "low",
+    "environment": "development",
+    "department": "IT",
+    "owner": "it.52@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DEV-PRD-053",
+    "ip_address": "10.20.10.54",
+    "os": "CentOS 7",
+    "os_version": "7",
+    "last_patch_date": "2026-03-17",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Finance",
+    "owner": "finance.53@company.com",
+    "tags": [
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "WEB-DEV-054",
+    "ip_address": "10.20.10.55",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2026-01-30",
+    "criticality": "low",
+    "environment": "development",
+    "department": "Operations",
+    "owner": "operations.54@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "WEB-STG-055",
+    "ip_address": "10.20.10.56",
+    "os": "Ubuntu 20.04",
+    "os_version": "20.04",
+    "last_patch_date": "2025-12-30",
+    "criticality": "low",
+    "environment": "staging",
+    "department": "Finance",
+    "owner": "finance.55@company.com",
+    "tags": [
+      "internet-facing",
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "APP-DEV-056",
+    "ip_address": "10.20.10.57",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2026-04-01",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "IT",
+    "owner": "it.56@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "OPS-PRD-057",
+    "ip_address": "10.20.10.58",
+    "os": "Debian 11",
+    "os_version": "11",
+    "last_patch_date": "2026-02-04",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "HR",
+    "owner": "hr.57@company.com",
+    "tags": [
+      "hipaa"
+    ]
+  },
+  {
+    "hostname": "DEV-DEV-058",
+    "ip_address": "10.20.10.59",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9",
+    "last_patch_date": "2026-03-03",
+    "criticality": "high",
+    "environment": "development",
+    "department": "Security",
+    "owner": "security.58@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DEV-PRD-059",
+    "ip_address": "10.20.10.60",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-03-09",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.59@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DC-PRD-060",
+    "ip_address": "10.20.10.61",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2025-12-09",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.60@company.com",
+    "tags": [
+      "tier-0"
+    ]
+  },
+  {
+    "hostname": "OPS-PRD-061",
+    "ip_address": "10.20.10.62",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-02-15",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.61@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-PRD-062",
+    "ip_address": "10.20.10.63",
+    "os": "macOS Ventura",
+    "os_version": "13",
+    "last_patch_date": "2025-10-23",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.62@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "OPS-PRD-063",
+    "ip_address": "10.20.10.64",
+    "os": "Ubuntu 20.04",
+    "os_version": "20.04",
+    "last_patch_date": "2026-03-07",
+    "criticality": "low",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.63@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "FIN-DEV-064",
+    "ip_address": "10.20.10.65",
+    "os": "Ubuntu 22.04",
+    "os_version": "22.04",
+    "last_patch_date": "2026-01-28",
+    "criticality": "high",
+    "environment": "development",
+    "department": "Engineering",
+    "owner": "engineering.64@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-065",
+    "ip_address": "10.20.10.66",
+    "os": "Debian 11",
+    "os_version": "11",
+    "last_patch_date": "2026-03-07",
+    "criticality": "low",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.65@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DB-PRD-066",
+    "ip_address": "10.20.10.67",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2025-11-23",
+    "criticality": "high",
+    "environment": "production",
+    "department": "HR",
+    "owner": "hr.66@company.com",
+    "tags": [
+      "hipaa"
+    ]
+  },
+  {
+    "hostname": "DEV-PRD-067",
+    "ip_address": "10.20.10.68",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2025-12-16",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.67@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-068",
+    "ip_address": "10.20.10.69",
+    "os": "Ubuntu 20.04",
+    "os_version": "20.04",
+    "last_patch_date": "2026-03-05",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.68@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-STG-069",
+    "ip_address": "10.20.10.70",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9",
+    "last_patch_date": "2026-01-11",
+    "criticality": "medium",
+    "environment": "staging",
+    "department": "Engineering",
+    "owner": "engineering.69@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-070",
+    "ip_address": "10.20.10.71",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9",
+    "last_patch_date": "2026-02-20",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.70@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "FIN-STG-071",
+    "ip_address": "10.20.10.72",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2026-03-15",
+    "criticality": "medium",
+    "environment": "staging",
+    "department": "Engineering",
+    "owner": "engineering.71@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "HR-PRD-072",
+    "ip_address": "10.20.10.73",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "8",
+    "last_patch_date": "2026-02-10",
+    "criticality": "high",
+    "environment": "production",
+    "department": "HR",
+    "owner": "hr.72@company.com",
+    "tags": [
+      "hipaa"
+    ]
+  },
+  {
+    "hostname": "SEC-PRD-073",
+    "ip_address": "10.20.10.74",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2026-03-15",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.73@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "HR-PRD-074",
+    "ip_address": "10.20.10.75",
+    "os": "Windows 10 Pro",
+    "os_version": "22H2",
+    "last_patch_date": "2026-02-04",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.74@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DB-STG-075",
+    "ip_address": "10.20.10.76",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2026-02-09",
+    "criticality": "critical",
+    "environment": "staging",
+    "department": "Engineering",
+    "owner": "engineering.75@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "OPS-DEV-076",
+    "ip_address": "10.20.10.77",
+    "os": "Debian 11",
+    "os_version": "11",
+    "last_patch_date": "2026-01-15",
+    "criticality": "medium",
+    "environment": "development",
+    "department": "Finance",
+    "owner": "finance.76@company.com",
+    "tags": [
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "WEB-PRD-077",
+    "ip_address": "10.20.10.78",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2026-03-09",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.77@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DEV-DEV-078",
+    "ip_address": "10.20.10.79",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2026-04-08",
+    "criticality": "low",
+    "environment": "development",
+    "department": "Engineering",
+    "owner": "engineering.78@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-STG-079",
+    "ip_address": "10.20.10.80",
+    "os": "Windows Server 2019",
+    "os_version": "2019",
+    "last_patch_date": "2026-01-15",
+    "criticality": "low",
+    "environment": "staging",
+    "department": "Security",
+    "owner": "security.79@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "DEV-STG-080",
+    "ip_address": "10.20.10.81",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "8",
+    "last_patch_date": "2026-01-08",
+    "criticality": "medium",
+    "environment": "staging",
+    "department": "Engineering",
+    "owner": "engineering.80@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "OPS-DEV-081",
+    "ip_address": "10.20.10.82",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "8",
+    "last_patch_date": "2026-02-13",
+    "criticality": "low",
+    "environment": "development",
+    "department": "Finance",
+    "owner": "finance.81@company.com",
+    "tags": [
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "OPS-PRD-082",
+    "ip_address": "10.20.10.83",
+    "os": "Ubuntu 22.04",
+    "os_version": "22.04",
+    "last_patch_date": "2025-11-23",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.82@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-083",
+    "ip_address": "10.20.10.84",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2026-01-26",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.83@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-PRD-084",
+    "ip_address": "10.20.10.85",
+    "os": "Windows Server 2019",
+    "os_version": "2019",
+    "last_patch_date": "2026-02-25",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.84@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "FIN-PRD-085",
+    "ip_address": "10.20.10.86",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9",
+    "last_patch_date": "2025-12-19",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Finance",
+    "owner": "finance.85@company.com",
+    "tags": [
+      "pci-scope"
+    ]
+  },
+  {
+    "hostname": "SEC-PRD-086",
+    "ip_address": "10.20.10.87",
+    "os": "Windows 11 Pro",
+    "os_version": "23H2",
+    "last_patch_date": "2025-11-09",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.86@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-087",
+    "ip_address": "10.20.10.88",
+    "os": "macOS Ventura",
+    "os_version": "13",
+    "last_patch_date": "2025-12-19",
+    "criticality": "high",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.87@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DEV-PRD-088",
+    "ip_address": "10.20.10.89",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-01-26",
+    "criticality": "high",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.88@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-PRD-089",
+    "ip_address": "10.20.10.90",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2026-02-22",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.89@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "API-DEV-090",
+    "ip_address": "10.20.10.91",
+    "os": "CentOS 7",
+    "os_version": "7",
+    "last_patch_date": "2026-02-23",
+    "criticality": "high",
+    "environment": "development",
+    "department": "Security",
+    "owner": "security.90@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "APP-STG-091",
+    "ip_address": "10.20.10.92",
+    "os": "macOS Sonoma",
+    "os_version": "14",
+    "last_patch_date": "2026-04-04",
+    "criticality": "medium",
+    "environment": "staging",
+    "department": "IT",
+    "owner": "it.91@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DC-PRD-092",
+    "ip_address": "10.20.10.93",
+    "os": "Ubuntu 20.04",
+    "os_version": "20.04",
+    "last_patch_date": "2025-12-29",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Engineering",
+    "owner": "engineering.92@company.com",
+    "tags": [
+      "tier-0"
+    ]
+  },
+  {
+    "hostname": "APP-PRD-093",
+    "ip_address": "10.20.10.94",
+    "os": "macOS Sonoma",
+    "os_version": "14",
+    "last_patch_date": "2026-04-01",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.93@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DB-PRD-094",
+    "ip_address": "10.20.10.95",
+    "os": "Windows 10 Pro",
+    "os_version": "22H2",
+    "last_patch_date": "2025-10-21",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Security",
+    "owner": "security.94@company.com",
+    "tags": [
+      "backup-critical",
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "HR-PRD-095",
+    "ip_address": "10.20.10.96",
+    "os": "Windows Server 2022",
+    "os_version": "2022",
+    "last_patch_date": "2026-03-07",
+    "criticality": "critical",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.95@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "DEV-STG-096",
+    "ip_address": "10.20.10.97",
+    "os": "macOS Ventura",
+    "os_version": "13",
+    "last_patch_date": "2026-01-23",
+    "criticality": "medium",
+    "environment": "staging",
+    "department": "Engineering",
+    "owner": "engineering.96@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-STG-097",
+    "ip_address": "10.20.10.98",
+    "os": "macOS Sonoma",
+    "os_version": "14",
+    "last_patch_date": "2026-03-02",
+    "criticality": "high",
+    "environment": "staging",
+    "department": "Operations",
+    "owner": "operations.97@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "APP-PRD-098",
+    "ip_address": "10.20.10.99",
+    "os": "ATCC Linux Server",
+    "os_version": "custom",
+    "last_patch_date": "2025-12-30",
+    "criticality": "low",
+    "environment": "production",
+    "department": "IT",
+    "owner": "it.98@company.com",
+    "tags": []
+  },
+  {
+    "hostname": "WEB-PRD-099",
+    "ip_address": "10.20.10.100",
+    "os": "ATCC Lab Linux",
+    "os_version": "edu",
+    "last_patch_date": "2026-02-02",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.99@company.com",
+    "tags": [
+      "internet-facing"
+    ]
+  },
+  {
+    "hostname": "OPS-PRD-100",
+    "ip_address": "10.20.10.101",
+    "os": "Debian 11",
+    "os_version": "11",
+    "last_patch_date": "2025-11-12",
+    "criticality": "medium",
+    "environment": "production",
+    "department": "Operations",
+    "owner": "operations.100@company.com",
+    "tags": []
+  }
+]

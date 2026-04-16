@@ -1,0 +1,660 @@
+{
+  "report_date": "2026-04-15T21:49:26",
+  "report_type": "High Risk Host Assessment",
+  "total_hosts": 100,
+  "total_high_risk": 64,
+  "risk_distribution": {
+    "critical": 28,
+    "high": 36,
+    "medium": 27,
+    "low": 9
+  },
+  "high_risk_hosts": [
+    {
+      "hostname": "WEB-PRD-001",
+      "risk_score": 100,
+      "risk_level": "critical",
+      "days_since_patch": 160,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "internet-facing",
+        "pci-scope"
+      ]
+    },
+    {
+      "hostname": "FIN-PRD-011",
+      "risk_score": 95,
+      "risk_level": "critical",
+      "days_since_patch": 107,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "hipaa"
+      ]
+    },
+    {
+      "hostname": "FIN-PRD-085",
+      "risk_score": 95,
+      "risk_level": "critical",
+      "days_since_patch": 117,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "pci-scope"
+      ]
+    },
+    {
+      "hostname": "FIN-PRD-040",
+      "risk_score": 90,
+      "risk_level": "critical",
+      "days_since_patch": 90,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "DC-PRD-002",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 140,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "tier-0"
+      ]
+    },
+    {
+      "hostname": "SEC-PRD-005",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 107,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "HR-PRD-006",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 127,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "FIN-PRD-024",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 134,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "HR-PRD-033",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 113,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DEV-PRD-045",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 169,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "OPS-PRD-051",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 118,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "WEB-PRD-062",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 174,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "DEV-PRD-067",
+      "risk_score": 85,
+      "risk_level": "critical",
+      "days_since_patch": 120,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "HR-PRD-003",
+      "risk_score": 80,
+      "risk_level": "critical",
+      "days_since_patch": 120,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "hipaa"
+      ]
+    },
+    {
+      "hostname": "DB-PRD-066",
+      "risk_score": 80,
+      "risk_level": "critical",
+      "days_since_patch": 143,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "hipaa"
+      ]
+    },
+    {
+      "hostname": "WEB-PRD-077",
+      "risk_score": 80,
+      "risk_level": "critical",
+      "days_since_patch": 37,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "WEB-PRD-084",
+      "risk_score": 80,
+      "risk_level": "critical",
+      "days_since_patch": 49,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "WEB-PRD-028",
+      "risk_score": 75,
+      "risk_level": "critical",
+      "days_since_patch": 68,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "DB-PRD-044",
+      "risk_score": 75,
+      "risk_level": "critical",
+      "days_since_patch": 77,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "APP-PRD-007",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 170,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "FIN-PRD-015",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 159,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DEV-PRD-020",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 138,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "APP-PRD-022",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 145,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "OPS-PRD-031",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 131,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "API-PRD-039",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 134,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "HR-PRD-072",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 64,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "hipaa"
+      ]
+    },
+    {
+      "hostname": "APP-PRD-087",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 117,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DB-PRD-094",
+      "risk_score": 70,
+      "risk_level": "critical",
+      "days_since_patch": 176,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": [
+        "backup-critical",
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "WEB-STG-034",
+      "risk_score": 68,
+      "risk_level": "high",
+      "days_since_patch": 62,
+      "criticality": "high",
+      "environment": "staging",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "WEB-STG-055",
+      "risk_score": 68,
+      "risk_level": "high",
+      "days_since_patch": 106,
+      "criticality": "low",
+      "environment": "staging",
+      "tags": [
+        "internet-facing",
+        "pci-scope"
+      ]
+    },
+    {
+      "hostname": "DB-STG-075",
+      "risk_score": 68,
+      "risk_level": "high",
+      "days_since_patch": 65,
+      "criticality": "critical",
+      "environment": "staging",
+      "tags": []
+    },
+    {
+      "hostname": "DEV-PRD-019",
+      "risk_score": 65,
+      "risk_level": "high",
+      "days_since_patch": 38,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "DEV-PRD-053",
+      "risk_score": 65,
+      "risk_level": "high",
+      "days_since_patch": 29,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": [
+        "pci-scope"
+      ]
+    },
+    {
+      "hostname": "OPS-PRD-061",
+      "risk_score": 65,
+      "risk_level": "high",
+      "days_since_patch": 59,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "SEC-PRD-073",
+      "risk_score": 65,
+      "risk_level": "high",
+      "days_since_patch": 31,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "HR-PRD-095",
+      "risk_score": 65,
+      "risk_level": "high",
+      "days_since_patch": 39,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DEV-STG-029",
+      "risk_score": 63,
+      "risk_level": "high",
+      "days_since_patch": 120,
+      "criticality": "high",
+      "environment": "staging",
+      "tags": []
+    },
+    {
+      "hostname": "OPS-STG-041",
+      "risk_score": 63,
+      "risk_level": "high",
+      "days_since_patch": 70,
+      "criticality": "high",
+      "environment": "staging",
+      "tags": [
+        "pci-scope"
+      ]
+    },
+    {
+      "hostname": "APP-PRD-014",
+      "risk_score": 60,
+      "risk_level": "high",
+      "days_since_patch": 77,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "APP-PRD-083",
+      "risk_score": 60,
+      "risk_level": "high",
+      "days_since_patch": 79,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DEV-PRD-088",
+      "risk_score": 60,
+      "risk_level": "high",
+      "days_since_patch": 79,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "WEB-PRD-099",
+      "risk_score": 60,
+      "risk_level": "high",
+      "days_since_patch": 72,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "WEB-STG-004",
+      "risk_score": 58,
+      "risk_level": "high",
+      "days_since_patch": 59,
+      "criticality": "high",
+      "environment": "staging",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "WEB-DEV-021",
+      "risk_score": 58,
+      "risk_level": "high",
+      "days_since_patch": 82,
+      "criticality": "medium",
+      "environment": "development",
+      "tags": [
+        "internet-facing",
+        "pci-scope"
+      ]
+    },
+    {
+      "hostname": "WEB-STG-049",
+      "risk_score": 58,
+      "risk_level": "high",
+      "days_since_patch": 100,
+      "criticality": "low",
+      "environment": "staging",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "WEB-STG-097",
+      "risk_score": 58,
+      "risk_level": "high",
+      "days_since_patch": 44,
+      "criticality": "high",
+      "environment": "staging",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "API-PRD-016",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 22,
+      "criticality": "high",
+      "environment": "production",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "FIN-PRD-042",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 113,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DB-PRD-043",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 30,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DEV-PRD-050",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 77,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": [
+        "hipaa"
+      ]
+    },
+    {
+      "hostname": "OPS-PRD-057",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 70,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": [
+        "hipaa"
+      ]
+    },
+    {
+      "hostname": "DC-PRD-060",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 127,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": [
+        "tier-0"
+      ]
+    },
+    {
+      "hostname": "OPS-PRD-082",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 143,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "SEC-PRD-086",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 157,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DC-PRD-092",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 107,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": [
+        "tier-0"
+      ]
+    },
+    {
+      "hostname": "APP-PRD-093",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 14,
+      "criticality": "critical",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "OPS-PRD-100",
+      "risk_score": 55,
+      "risk_level": "high",
+      "days_since_patch": 154,
+      "criticality": "medium",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "HR-STG-048",
+      "risk_score": 53,
+      "risk_level": "high",
+      "days_since_patch": 75,
+      "criticality": "medium",
+      "environment": "staging",
+      "tags": [
+        "internet-facing"
+      ]
+    },
+    {
+      "hostname": "HR-PRD-010",
+      "risk_score": 50,
+      "risk_level": "high",
+      "days_since_patch": 175,
+      "criticality": "low",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "DB-PRD-013",
+      "risk_score": 50,
+      "risk_level": "high",
+      "days_since_patch": 155,
+      "criticality": "low",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "HR-PRD-026",
+      "risk_score": 50,
+      "risk_level": "high",
+      "days_since_patch": 61,
+      "criticality": "low",
+      "environment": "production",
+      "tags": [
+        "pci-scope"
+      ]
+    },
+    {
+      "hostname": "DC-PRD-035",
+      "risk_score": 50,
+      "risk_level": "high",
+      "days_since_patch": 123,
+      "criticality": "low",
+      "environment": "production",
+      "tags": [
+        "tier-0"
+      ]
+    },
+    {
+      "hostname": "DEV-PRD-059",
+      "risk_score": 50,
+      "risk_level": "high",
+      "days_since_patch": 37,
+      "criticality": "high",
+      "environment": "production",
+      "tags": []
+    },
+    {
+      "hostname": "APP-PRD-098",
+      "risk_score": 50,
+      "risk_level": "high",
+      "days_since_patch": 106,
+      "criticality": "low",
+      "environment": "production",
+      "tags": []
+    }
+  ]
+}
