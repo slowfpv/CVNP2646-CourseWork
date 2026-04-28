@@ -5,6 +5,8 @@ from pathlib import Path
 
 
 class Vulnerability:
+    """Represents one vulnerability found on a host."""
+
     def __init__(self, cve, cvss, description):
         self.cve = cve
         self.cvss = float(cvss)
@@ -12,14 +14,17 @@ class Vulnerability:
 
 
 class Host:
+    """Represents one system being analyzed."""
+
     def __init__(self, hostname, ip, criticality, internet_facing, vulnerabilities):
         self.hostname = hostname
         self.ip = ip
-        self.criticality = criticality
+        self.criticality = criticality.lower()
         self.internet_facing = internet_facing
         self.vulnerabilities = vulnerabilities
 
     def calculate_risk_score(self):
+        """Calculate risk score based on CVSS, criticality, and exposure."""
         if not self.vulnerabilities:
             return 0
 
@@ -39,6 +44,7 @@ class Host:
         return min(round(score), 100)
 
     def get_risk_level(self):
+        """Convert risk score into a readable level."""
         score = self.calculate_risk_score()
 
         if score >= 90:
@@ -47,29 +53,28 @@ class Host:
             return "High"
         elif score >= 40:
             return "Medium"
-        else:
-            return "Low"
+        return "Low"
 
 
 class RiskAnalyzer:
+    """Analyzes hosts and ranks them by risk."""
+
     def __init__(self, hosts):
         self.hosts = hosts
 
     def analyze(self, scan_date):
+        """Analyze all hosts and return report data."""
         results = []
 
         for host in self.hosts:
-            score = host.calculate_risk_score()
-            level = host.get_risk_level()
-
             results.append({
                 "hostname": host.hostname,
                 "ip": host.ip,
                 "criticality": host.criticality,
                 "internet_facing": host.internet_facing,
                 "vulnerability_count": len(host.vulnerabilities),
-                "risk_score": score,
-                "risk_level": level
+                "risk_score": host.calculate_risk_score(),
+                "risk_level": host.get_risk_level()
             })
 
         results.sort(key=lambda item: item["risk_score"], reverse=True)
@@ -88,18 +93,25 @@ class RiskAnalyzer:
 
 
 class ReportGenerator:
+    """Creates report files."""
+
     def save_json_report(self, results, output_file):
-        with open(output_file, "w") as file:
+        """Save results to a JSON report."""
+        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+
+        with open(output_file, "w", encoding="utf-8") as file:
             json.dump(results, file, indent=4)
 
     def save_text_summary(self, results, summary_file):
-        with open(summary_file, "w") as file:
+        """Save a readable text summary report."""
+        Path(summary_file).parent.mkdir(parents=True, exist_ok=True)
+
+        with open(summary_file, "w", encoding="utf-8") as file:
             file.write("VULNPRIORITY PRO SUMMARY REPORT\n")
             file.write("=" * 40 + "\n\n")
             file.write(f"Scan Date: {results['scan_date']}\n")
             file.write(f"Total Hosts: {results['total_hosts']}\n")
             file.write(f"High Risk Hosts: {results['high_risk_hosts']}\n\n")
-
             file.write("TOP PRIORITY HOSTS\n")
             file.write("-" * 40 + "\n")
 
@@ -112,46 +124,100 @@ class ReportGenerator:
 
 
 def setup_logging(verbose=False):
+    """Set up logging."""
     level = logging.DEBUG if verbose else logging.INFO
 
     logging.basicConfig(
         filename="vulnpriority.log",
         level=level,
-        format="%(asctime)s - %(levelname)s - %(message)s"
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        force=True
     )
 
 
 def load_json_file(input_file):
+    """Load JSON data from a file."""
     try:
-        with open(input_file, "r") as file:
+        with open(input_file, "r", encoding="utf-8") as file:
             return json.load(file)
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Input file not found: {input_file}")
-    except json.JSONDecodeError:
-        raise ValueError(f"Invalid JSON file: {input_file}")
+
+    except FileNotFoundError as error:
+        raise FileNotFoundError(f"Input file not found: {input_file}") from error
+
+    except PermissionError as error:
+        raise PermissionError(f"Permission denied for file: {input_file}") from error
+
+    except json.JSONDecodeError as error:
+        raise ValueError(f"Invalid JSON file: {input_file}") from error
+
+
+def validate_input_data(data):
+    """Validate required JSON fields."""
+    if not isinstance(data, dict):
+        raise ValueError("Input JSON must be an object")
+
+    if "scan_date" not in data:
+        raise ValueError("Input JSON is missing required field: scan_date")
+
+    if "hosts" not in data:
+        raise ValueError("Input JSON is missing required field: hosts")
+
+    if not isinstance(data["hosts"], list):
+        raise ValueError("hosts must be a list")
+
+    for index, host in enumerate(data["hosts"]):
+        required_host_fields = [
+            "hostname",
+            "ip",
+            "criticality",
+            "internet_facing",
+            "vulnerabilities"
+        ]
+
+        for field in required_host_fields:
+            if field not in host:
+                raise ValueError(f"Host {index} is missing required field: {field}")
+
+        if not isinstance(host["vulnerabilities"], list):
+            raise ValueError(f"Host {index} vulnerabilities must be a list")
+
+        for vuln_index, vuln in enumerate(host["vulnerabilities"]):
+            if "cve" not in vuln:
+                raise ValueError(f"Host {index} vulnerability {vuln_index} is missing cve")
+
+            if "cvss" not in vuln:
+                raise ValueError(f"Host {index} vulnerability {vuln_index} is missing cvss")
+
+            try:
+                float(vuln["cvss"])
+            except ValueError as error:
+                raise ValueError(
+                    f"Host {index} vulnerability {vuln_index} has invalid cvss"
+                ) from error
 
 
 def build_hosts(data):
+    """Build Host objects from validated JSON data."""
     hosts = []
 
-    for item in data.get("hosts", []):
+    for item in data["hosts"]:
         vulnerabilities = []
 
-        for vuln in item.get("vulnerabilities", []):
+        for vuln in item["vulnerabilities"]:
             vulnerabilities.append(
                 Vulnerability(
-                    vuln.get("cve", "UNKNOWN"),
-                    vuln.get("cvss", 0),
+                    vuln["cve"],
+                    vuln["cvss"],
                     vuln.get("description", "No description")
                 )
             )
 
         hosts.append(
             Host(
-                item.get("hostname", "unknown-host"),
-                item.get("ip", "0.0.0.0"),
-                item.get("criticality", "low"),
-                item.get("internet_facing", False),
+                item["hostname"],
+                item["ip"],
+                item["criticality"],
+                item["internet_facing"],
                 vulnerabilities
             )
         )
@@ -160,6 +226,7 @@ def build_hosts(data):
 
 
 def create_parser():
+    """Create CLI argument parser."""
     parser = argparse.ArgumentParser(
         description="VulnPriority Pro - Vulnerability Risk Prioritization Tool"
     )
@@ -191,7 +258,24 @@ def create_parser():
     return parser
 
 
+def run_tool(input_file, output_file, summary_file):
+    """Run the main tool logic."""
+    data = load_json_file(input_file)
+    validate_input_data(data)
+
+    hosts = build_hosts(data)
+    analyzer = RiskAnalyzer(hosts)
+    results = analyzer.analyze(data["scan_date"])
+
+    report_generator = ReportGenerator()
+    report_generator.save_json_report(results, output_file)
+    report_generator.save_text_summary(results, summary_file)
+
+    return results
+
+
 def main():
+    """Main CLI entry point."""
     parser = create_parser()
     args = parser.parse_args()
 
@@ -200,18 +284,7 @@ def main():
     try:
         logging.info("Starting VulnPriority Pro")
 
-        Path("reports").mkdir(exist_ok=True)
-
-        data = load_json_file(args.input)
-        scan_date = data.get("scan_date", "unknown")
-
-        hosts = build_hosts(data)
-        analyzer = RiskAnalyzer(hosts)
-        results = analyzer.analyze(scan_date)
-
-        report_generator = ReportGenerator()
-        report_generator.save_json_report(results, args.output)
-        report_generator.save_text_summary(results, args.summary)
+        results = run_tool(args.input, args.output, args.summary)
 
         logging.info("Analysis completed successfully")
 
@@ -221,10 +294,13 @@ def main():
         print(f"JSON report saved to: {args.output}")
         print(f"Summary report saved to: {args.summary}")
 
+        return 0
+
     except Exception as error:
         logging.error("Program failed: %s", error)
         print(f"ERROR: {error}")
+        return 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
