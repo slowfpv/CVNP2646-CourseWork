@@ -1,0 +1,20 @@
+2026-04-28 02:05:49,149 - network_monitor - INFO - Network Monitor v1.0.0 starting
+2026-04-28 02:05:49,150 - network_monitor - DEBUG - Parsed packet at line 1: src=192.168.1.5 dst=10.0.0.1 protocol=TCP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 2: src=192.168.1.5 dst=10.0.0.1 protocol=TCP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 3: src=192.168.1.9 dst=10.0.0.2 protocol=UDP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 4: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 5: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 6: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 7: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 8: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,151 - network_monitor - DEBUG - Parsed packet at line 9: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,152 - network_monitor - DEBUG - Parsed packet at line 10: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,152 - network_monitor - DEBUG - Parsed packet at line 11: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,152 - network_monitor - DEBUG - Parsed packet at line 12: src=192.168.1.10 dst=10.0.0.3 protocol=TCP
+2026-04-28 02:05:49,152 - network_monitor - INFO - Loaded 12 packets from traffic_sample.log
+2026-04-28 02:05:49,152 - network_monitor - INFO - Analysis started
+2026-04-28 02:05:49,152 - network_monitor - DEBUG - Threshold check for 192.168.1.10: unique_ports=9 threshold=25 syn_count=0 threshold=100
+2026-04-28 02:05:49,153 - network_monitor - DEBUG - Threshold check for 192.168.1.5: unique_ports=2 threshold=25 syn_count=2 threshold=100
+2026-04-28 02:05:49,153 - network_monitor - DEBUG - Threshold check for 192.168.1.9: unique_ports=1 threshold=25 syn_count=0 threshold=100
+2026-04-28 02:05:49,153 - network_monitor - INFO - Analysis complete: total_packets=12 port_scans=0 syn_floods=0
+2026-04-28 02:05:49,154 - network_monitor - INFO - Results written to results.json
