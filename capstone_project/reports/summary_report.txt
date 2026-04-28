@@ -1,0 +1,12 @@
+VULNPRIORITY PRO SUMMARY REPORT
+========================================
+
+Scan Date: 2026-04-27
+Total Hosts: 3
+High Risk Hosts: 2
+
+TOP PRIORITY HOSTS
+----------------------------------------
+WEB-SRV-001 (10.0.0.10) - Score: 100 - Level: Critical
+DB-SRV-002 (10.0.0.20) - Score: 91 - Level: Critical
+DEV-WS-003 (10.0.0.30) - Score: 43 - Level: Medium

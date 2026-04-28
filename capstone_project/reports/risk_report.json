@@ -1,0 +1,34 @@
+{
+    "scan_date": "2026-04-27",
+    "total_hosts": 3,
+    "high_risk_hosts": 2,
+    "top_priority_hosts": [
+        {
+            "hostname": "WEB-SRV-001",
+            "ip": "10.0.0.10",
+            "criticality": "critical",
+            "internet_facing": true,
+            "vulnerability_count": 2,
+            "risk_score": 100,
+            "risk_level": "Critical"
+        },
+        {
+            "hostname": "DB-SRV-002",
+            "ip": "10.0.0.20",
+            "criticality": "high",
+            "internet_facing": false,
+            "vulnerability_count": 1,
+            "risk_score": 91,
+            "risk_level": "Critical"
+        },
+        {
+            "hostname": "DEV-WS-003",
+            "ip": "10.0.0.30",
+            "criticality": "low",
+            "internet_facing": false,
+            "vulnerability_count": 1,
+            "risk_score": 43,
+            "risk_level": "Medium"
+        }
+    ]
+}
