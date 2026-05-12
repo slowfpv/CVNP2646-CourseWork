@@ -1,6 +1,7 @@
 import argparse
 import json
 import logging
+import random
 import time
 from pathlib import Path
 
@@ -275,64 +276,69 @@ def run_tool(input_file, output_file, summary_file):
     return results
 
 
+def type_line(text, delay=0.015):
+    """Print text with a typewriter-style terminal effect."""
+    for character in text:
+        print(character, end="", flush=True)
+        time.sleep(delay)
+    print()
+
+
+def glitch_line(text, repeats=3, delay=0.06):
+    """Display a short glitch-style line before showing final text."""
+    symbols = "#@$%&*01X"
+    for _ in range(repeats):
+        scrambled = "".join(random.choice(symbols) for _ in range(len(text)))
+        print(f"\r{scrambled}", end="", flush=True)
+        time.sleep(delay)
+    print(f"\r{text}")
+
+
 def print_banner():
-    """Display a clean terminal banner for demo mode."""
+    """Display a cyber-style terminal banner for demo mode."""
     print()
-    print("╔════════════════════════════════════════════╗")
-    print("║              VulnPriority Pro             ║")
-    print("║      Vulnerability Risk Analyzer          ║")
-    print("╚════════════════════════════════════════════╝")
+    glitch_line("INITIALIZING VULNPRIORITY PRO", repeats=4)
+    print("╔══════════════════════════════════════════════════════╗")
+    print("║                  VULNPRIORITY PRO                   ║")
+    print("║            vulnerability risk analyzer              ║")
+    print("║              portfolio demo interface               ║")
+    print("╚══════════════════════════════════════════════════════╝")
     print()
 
 
-def loading_step(message, delay=0.25):
+def loading_step(message, delay=0.10):
     """Display one animated terminal loading step."""
     frames = ["|", "/", "-", "\\"]
-
-    for frame in frames:
-        print(f"\r[{frame}] {message}", end="", flush=True)
-        time.sleep(delay)
-
+    for _ in range(2):
+        for frame in frames:
+            print(f"\r[{frame}] {message}", end="", flush=True)
+            time.sleep(delay)
     print(f"\r[✓] {message}")
 
 
 def run_verbose_intro():
     """Display animated startup steps when verbose mode is enabled."""
     print_banner()
-    loading_step("Loading vulnerability data...")
-    loading_step("Validating input structure...")
-    loading_step("Calculating host risk scores...")
-    loading_step("Generating reports...")
+
+    boot_lines = [
+        "[BOOT] loading local analysis modules...",
+        "[BOOT] checking JSON input pipeline...",
+        "[BOOT] preparing risk scoring engine...",
+        "[BOOT] report generator standing by..."
+    ]
+
+    for line in boot_lines:
+        type_line(line, delay=0.01)
+        time.sleep(0.08)
+
     print()
+    loading_step("Loading vulnerability data")
+    loading_step("Validating input structure")
+    loading_step("Calculating host risk scores")
+    loading_step("Generating analyst reports")
 
-def print_banner():
-    """Display a clean terminal banner for demo mode."""
     print()
-    print("╔════════════════════════════════════════════╗")
-    print("║              VulnPriority Pro             ║")
-    print("║      Vulnerability Risk Analyzer          ║")
-    print("╚════════════════════════════════════════════╝")
-    print()
-
-
-def loading_step(message, delay=0.25):
-    """Display one animated terminal loading step."""
-    frames = ["|", "/", "-", "\\"]
-
-    for frame in frames:
-        print(f"\r[{frame}] {message}", end="", flush=True)
-        time.sleep(delay)
-
-    print(f"\r[✓] {message}")
-
-
-def run_verbose_intro():
-    """Display animated startup steps when verbose mode is enabled."""
-    print_banner()
-    loading_step("Loading vulnerability data...")
-    loading_step("Validating input structure...")
-    loading_step("Calculating host risk scores...")
-    loading_step("Generating reports...")
+    glitch_line("ACCESS GRANTED // ANALYSIS MODE ACTIVE", repeats=3)
     print()
 
 def main():
