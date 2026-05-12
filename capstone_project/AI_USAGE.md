@@ -1,10 +1,10 @@
-# AI Usage Log
+AI Usage Log
 
-## Project
+Project
 
 VulnPriority Pro
 
-## Course
+Course
 
 CVNP2646
 
@@ -15,8 +15,6 @@ Bryan Gonzalez
 ## Purpose of AI Use
 
 AI was used as a support tool during the capstone project. It helped with brainstorming, debugging, documentation, test planning, and improving explanations. AI was not used as a replacement for understanding the code. All suggestions were reviewed, tested, and modified as needed.
-
----
 
 ## AI Use Entry 1
 
@@ -40,7 +38,6 @@ I accepted the general idea of using JSON input and generating both JSON and tex
 
 I adjusted the project to match the course requirements and kept the first version simple enough to complete and test.
 
----
 
 ## AI Use Entry 2
 
@@ -64,7 +61,6 @@ I accepted the idea of checking the test structure and import paths.
 
 I tested the solution locally and only kept the changes that worked with my actual repo.
 
----
 
 ## AI Use Entry 3
 
@@ -88,7 +84,6 @@ I accepted the idea of testing small deterministic functions because those are e
 
 I only used tests that matched the functions that actually existed in my project.
 
----
 
 ## AI Use Entry 4
 
@@ -112,8 +107,6 @@ I accepted the README structure because it made the project easier to understand
 
 I removed or edited any claims that did not match my actual project.
 
----
-
 ## AI Rejection Example
 
 ### Prompt Used
@@ -132,8 +125,5 @@ I rejected those suggestions for the final submission because they were outside 
 
 I listed those ideas only as future improvements instead of claiming they were already implemented.
 
----
-
 ## Reflection on AI Use
-
 AI was useful for organizing ideas, improving documentation, and troubleshooting errors. The most important part was reviewing the output carefully. I learned that AI can help speed up development, but it can also suggest features or code that do not match the actual project. For this capstone, I used AI as a helper while making sure the final code, tests, and documentation were accurate.
