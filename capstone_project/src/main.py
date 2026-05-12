@@ -1,6 +1,7 @@
 import argparse
 import json
 import logging
+import time
 from pathlib import Path
 
 
@@ -274,12 +275,75 @@ def run_tool(input_file, output_file, summary_file):
     return results
 
 
+def print_banner():
+    """Display a clean terminal banner for demo mode."""
+    print()
+    print("╔════════════════════════════════════════════╗")
+    print("║              VulnPriority Pro             ║")
+    print("║      Vulnerability Risk Analyzer          ║")
+    print("╚════════════════════════════════════════════╝")
+    print()
+
+
+def loading_step(message, delay=0.25):
+    """Display one animated terminal loading step."""
+    frames = ["|", "/", "-", "\\"]
+
+    for frame in frames:
+        print(f"\r[{frame}] {message}", end="", flush=True)
+        time.sleep(delay)
+
+    print(f"\r[✓] {message}")
+
+
+def run_verbose_intro():
+    """Display animated startup steps when verbose mode is enabled."""
+    print_banner()
+    loading_step("Loading vulnerability data...")
+    loading_step("Validating input structure...")
+    loading_step("Calculating host risk scores...")
+    loading_step("Generating reports...")
+    print()
+
+def print_banner():
+    """Display a clean terminal banner for demo mode."""
+    print()
+    print("╔════════════════════════════════════════════╗")
+    print("║              VulnPriority Pro             ║")
+    print("║      Vulnerability Risk Analyzer          ║")
+    print("╚════════════════════════════════════════════╝")
+    print()
+
+
+def loading_step(message, delay=0.25):
+    """Display one animated terminal loading step."""
+    frames = ["|", "/", "-", "\\"]
+
+    for frame in frames:
+        print(f"\r[{frame}] {message}", end="", flush=True)
+        time.sleep(delay)
+
+    print(f"\r[✓] {message}")
+
+
+def run_verbose_intro():
+    """Display animated startup steps when verbose mode is enabled."""
+    print_banner()
+    loading_step("Loading vulnerability data...")
+    loading_step("Validating input structure...")
+    loading_step("Calculating host risk scores...")
+    loading_step("Generating reports...")
+    print()
+
 def main():
     """Main CLI entry point."""
     parser = create_parser()
     args = parser.parse_args()
 
     setup_logging(args.verbose)
+
+    if args.verbose:
+        run_verbose_intro()
 
     try:
         logging.info("Starting VulnPriority Pro")
