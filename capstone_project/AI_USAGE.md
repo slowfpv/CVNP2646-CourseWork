@@ -18,7 +18,7 @@ AI was used as a support tool during the capstone project. It helped with brains
 
 ## AI Use Entry 1
 
-### Date
+Date
 
 Week 14
 
